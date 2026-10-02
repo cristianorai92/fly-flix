@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { LuFilm } from "react-icons/lu";
 
 export default function Header() {
@@ -6,8 +7,19 @@ export default function Header() {
         bg-[#1D2839]/95 backdrop-blur-sm border-b border-[#e5e7eb]">
             <div className="container flex h-16 items-center justify-between">
                 <div className="flex items-center gap-2">
-                <LuFilm />
+                    <LuFilm className="text-[30px] text-[#6d28d9]"/>
+                    <Link href={"/"} className="text-xl font-bold text-[#f3fafc]">
+                        FLY-<span className="text-[#6d28d9]">FLIX</span>
+                    </Link>
                 </div>
+                <nav className="flex items-center gap-6">
+                    <Link href={"/"} className="text-[#f8fafc]/80 hover:text-[#f8fafc] transition-colors">
+                        Home
+                    </Link>
+                    <Link href={"/filmes"} className="text-[#f8fafc]/80 hover:text-[#f8fafc] transition-colors">
+                        Filmes
+                    </Link>
+                </nav>
             </div>
         </header>
     )
