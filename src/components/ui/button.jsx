@@ -1,6 +1,13 @@
-const Button  = ({className, ...props}) => {
-    return (
-        <button className={className, "rounded-md"} {...props}/>
+import { cn } from "@/lib/utils"
+import { twMerge } from "tailwind-merge"
 
+export default function Button({ className, ...props }) {
+    return (
+        <button
+            className={
+                cn("w-[150px] h-[50px] rounded-md bg-[#6d28d9] text-white cursor-pointer flex gap-2 items-center justify-center", className)
+            }
+            {...props}
+        />
     )
 }

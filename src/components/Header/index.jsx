@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { LuFilm } from "react-icons/lu";
+import { LuFilm, LuPlus } from "react-icons/lu";
+import Button from "../ui/button";
+
 
 export default function Header() {
     return (
@@ -20,6 +22,11 @@ export default function Header() {
                         Filmes
                     </Link>
                 </nav>
+
+                <Button>
+                    <LuPlus/>
+                    Add Movie
+                </Button>
             </div>
         </header>
     )
