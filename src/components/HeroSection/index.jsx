@@ -1,3 +1,5 @@
+import Button from "../ui/button";
+
 export default function HeroSection(){
     return (
         <section className="relative h-[70vh]">
@@ -17,7 +19,7 @@ export default function HeroSection(){
                   <Button>
                   Browse Movies
                   </Button>
-                   <Button className={"text-[#0ea5e9] border border-[#0ea5e9] bg-[#1d283a] houver:bg-[#1d283a]/50"}>
+                   <Button className={"text-[#0ea5e9] border border-[#0ea5e9] bg-[#1d283a] hover:bg-[#1d283a]/50"}>
                   Add Movie
                   </Button>
               </div>
